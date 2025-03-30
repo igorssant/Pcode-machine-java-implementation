@@ -63,7 +63,11 @@ public class Pcode {
 
         } while(this.programRegister != 0);
 
-        return this.stack[3 + instruction.getLevelBuffer() + instruction.getAddressBuffer()];
+        return this.stack[
+            this.maximumLevel +
+            instruction.getLevelBuffer() +
+            instruction.getAddressBuffer()
+        ];
     }
 
     private boolean isValidAddress(int number) {
