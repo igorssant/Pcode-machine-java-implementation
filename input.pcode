@@ -1,0 +1,11 @@
+10
+INT;    0;  5
+LIT;    0;  1
+STO;    0;  3
+LIT;    0;  1
+STO;    0;  4
+LOD;    0;  3
+LOD;    0;  4
+OPR;    0;  2
+STO;    0;  3
+OPR;    0;  0
